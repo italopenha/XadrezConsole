@@ -16,5 +16,10 @@
             QteMovimentos = 0;
             Quadro = quadro;
         }
+
+        public void IncrementarMovimentos()
+        {
+            QteMovimentos++;
+        }
     }
 }
