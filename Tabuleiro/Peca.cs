@@ -9,9 +9,9 @@
 
         public Peca() { }
 
-        public Peca(Posicao posicao, Cor cor, QuadroDeJogo quadro)
+        public Peca(Cor cor, QuadroDeJogo quadro)
         {
-            Posicao = posicao;
+            Posicao = null;
             Cor = cor;
             QteMovimentos = 0;
             Quadro = quadro;
