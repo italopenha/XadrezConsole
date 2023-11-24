@@ -1,4 +1,6 @@
-﻿namespace XadrezConsole.Tabuleiro
+﻿using XadrezConsole.Tabuleiro.Exceptions;
+
+namespace XadrezConsole.Tabuleiro
 {
     internal class QuadroDeJogo
     {
@@ -38,6 +40,14 @@
                 return false;
             }
             return true;
+        }
+
+        public void ValidarPosicao(Posicao pos)
+        {
+            if (!PosicaoValida(pos))
+            {
+                throw new TabuleiroException("Posição inválida!");
+            }
         }
     }
 }
