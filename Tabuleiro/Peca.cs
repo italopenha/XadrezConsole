@@ -5,11 +5,11 @@
         public Posicao Posicao { get; set; }
         public Cor Cor { get; protected set; }
         public int QteMovimentos { get; protected set; }
-        public Quadro Quadro { get; protected set; }
+        public QuadroDeJogo Quadro { get; protected set; }
 
         public Peca() { }
 
-        public Peca(Posicao posicao, Cor cor, Quadro quadro)
+        public Peca(Posicao posicao, Cor cor, QuadroDeJogo quadro)
         {
             Posicao = posicao;
             Cor = cor;
